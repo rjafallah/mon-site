@@ -1,0 +1,351 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+.global {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: #05529A;
+    padding: 15px;                 /* espace à l'interieur du rectangle */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* la barre de navigation reste collée en haut. */
+    top: 0; /* fixée en haut */
+    z-index: 1000; /* Assure que la barre est au-dessus du contenu */
+    width: 100%; /* toute la largeur */
+}
+
+nav .table ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .table ul li {
+    margin: 0 10px;
+}
+
+nav .table ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .table ul li a:hover {
+    text-decoration: overline; /* apparaitre un ligne au dessus du texte */ 
+}
+
+.font {
+    background-color: lightgrey;
+    width: 35%; /* un tiers de la largeur de l'écran */
+    height: 100%; /* hauteur */ 
+    z-index: -1; /* met le div en arriere plan */
+    position: fixed;
+}
+
+/* mis en page de l'image et le texte */
+.principale {
+    background-color: #05529A;
+    width: 30%; /* largeur */
+    height: auto;
+    left: 200px;
+    top: 100px;
+    position: relative;
+    justify-content: center;
+}
+
+.droite {
+    right:0px;
+    width: 55%;
+    margin-top: -50px;
+    margin-right: 10px;
+}
+
+/* Image styling */
+.im1 {
+    display: flex;
+    border-radius: 50%; /* Transforme le conteneur en cercle */
+    overflow: hidden; /* Masque les parties en excès de l'image */
+    object-fit: cover; /* Ajuste l'image pour bien remplir le conteneur */
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+/*button*/
+.button {
+    justify-content: space-between;
+    display: flex;
+}
+
+.button1 {
+    margin-left: 25%;
+}
+
+.button2 {
+    margin-right: 25%;
+}
+
+.cv{
+    margin-bottom: 10%;
+    background-color: rgb(143, 221, 254); /* couleur initiale */
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    z-index: 20;
+}
+
+/* Paragraph styling */
+.intro1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    margin-top: 0px;
+    font-family: "Sixtyfour", sans-serif;
+}
+
+.intro2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    margin-top: 0px;
+    font-family: "Pacifico", cursive;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.8;
+    font-family: "Playwrite GB S", cursive;
+    margin-top: 100px;
+}
+
+/* ENSEEIHT */
+.ENSEEIHT {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.ENSEEIHT:hover {
+    color : blue;
+}
+
+/* video */
+.vid {
+    margin-left: 50px;
+    margin-top : 150px;
+}
+
+span {
+    font-weight: 900;
+    font-size: 110px;
+    font-family: "Qwitcher Grypen", cursive;
+    color: #050503;
+}
+
+.plus {
+    font-size: 150px;
+    color: black;
+    text-align: center;
+    line-height: 0.8; /* espace entre les lignes */
+}
+
+p strong {
+    color: #e63946;
+}
+
+/*video*/
+.vid1 {
+    margin-right: 300px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+/* Footer styling */
+footer {
+    color: white;
+    font-size: 15px;
+    bottom: 0;
+}  /*footer*/
+
+.footer {
+    display: flex; /* Active le mode flex */
+    justify-content: space-around;  /*Espace autour des divs */
+    background-color: #2a3342;
+    padding: 15px;                 /* espace à l'interieur du rectangle */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /*créer la boite */
+}
+
+.gauche1 {
+    float: left;
+    width: 20%;
+}
+
+.gauche2 {
+    float: left;
+    width: 30%;
+}
+
+.droite1 {
+    text-align: center;
+}
+
+/* style du contenu du footer */
+.in {
+    color: white;
+    text-decoration: none; /* enlever le soulignement */
+}
+
+.in:hover {
+    text-decoration: underline;
+}
+
+/* Lien contenant l'image */
+.linkedin-link {
+    text-decoration: none;
+}
+
+/* Logo LinkedIn */
+.linkedin-logo {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s, box-shadow 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet au survol */
+.linkedin-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* titre navigation */
+.titre {
+    background-color: rgb(251, 255, 0);
+    width: 100%;
+    text-align: center;
+    color: grey;
+    margin-top: 30px;
+}
+
+/* **Engineering_course** */
+.semestre {
+    margin-left: 350px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.modules {
+    font-size: 28px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 1000px;
+    line-height: 1.8;
+}
+
+.contenu {
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 20px;
+    max-width: 1100px; /* largeur maximal */
+    font-family: "Playwrite GB S", cursive;
+}
+
+/* **International mobility** */
+.International {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*images*/
+.im2 {
+    display: flex;
+    margin-left: 50px; 
+    overflow: hidden; /* Masque les parties en excès de l'image */
+    object-fit: cover; /* Ajuste l'image pour bien remplir le conteneur */
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    border-radius: 8px; /* Coins arrondis */
+    float: left; /*mettre a gauche du texte */
+    shape-outside: margin-box; /*s'adapter à l'image a coter*/
+    margin: 0 20px 5px 0;
+}
+
+.im3 {
+    display: flex;
+    overflow: hidden; /* Masque les parties en excès de l'image */
+    object-fit: cover; /* Ajuste l'image pour bien remplir le conteneur */
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    margin-left: 150px;
+    border-radius: 8px; /* Coins arrondis */
+    float: left; /*mettre a gauche du texte */
+    shape-outside: margin-box; /*s'adapter à l'image a coter*/
+    margin: 0 20px 5px 0; 
+}
+
+/*titre*/
+.international {
+    text-align: center;
+    font-family: "Sixtyfour", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Playwrite GB S", cursive;
+}
+/*texte*/
+.langue1 {
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: 0px;
+    text-align: left;
+    max-width: 900px;
+    font-family: none;
+}
+
+.langue2 {
+    font-size: 24px;
+    margin-left: 150px;
+    margin-top: 0px;
+    text-align: left;
+    max-width: 900px;
+    font-family: none;
+}
+/* séparation */
+.vertical-bar {
+    background-color: lightgrey;
+    height: 900px;
+    width: 2px;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.ligne {
+    border: none;
+    background-color: lightgrey;
+    height: 2px;
+    width: 25%;
+    margin: 20px auto;
+  }

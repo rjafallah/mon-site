@@ -1,0 +1,65 @@
+body {
+    background-color: white;
+    font-size: 29px;
+    font-style: cursive;
+    text-align: left;
+    margin-left: 125px ; /* Appliquer une marge de 20px sur tous le côté gauche */
+    margin-right: 125px ; /* Appliquer une marge de 20px sur tous le côté droit*/
+    margin-top: 60px ; /* Appliquer une marge de 20px sur tous le côté gauche */
+    line-height: 1.8;
+}
+
+/*politique de confidentialité */
+h1 {
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+.sous-titre {
+    font-style: italic;
+    font-weight: 700;
+    float: left;
+    color: green;
+}
+
+/*conditions d'utlisations */
+
+.cu {
+    margin : 70px;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*mentions légales*/
+
+.ml {
+    margin-left : 100px;
+    margin-right : 100px;
+    margin-top : 30px;
+    font-size: 29px;
+}
+
+.entre {
+    float: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.gauche {
+    text-align: left;
+}
+
+/*politique cookie*/
+
+.cookies {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: green;
+}
+
